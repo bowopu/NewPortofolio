@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" id="homepage">
+ <head>
+  <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Portfolio | Bowo Purnomo</title>
+  	<!-- Bootstarp 5 offline-->
+   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+   <!-- My Style CSS  -->
+   <link href="css/style.css" rel="stylesheet" />
+   <!-- Jquery JavaScript-->
+   <script src="assets/jquery/jquery.js"></script>
+	
+ </head>
+  <body >
+    <!-- Background -->
+    <div class="background">
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+    </div>
+    <!--Akhir Background -->
+    
+    <!-- Toogle Profile -->
+    <div class="toggle-profile">
+     <img src="assets/icon/humburger.svg">
+    </div>
+    <!-- Akhir Toogle Profile -->
+ 
+    <!-- Navbar Control -->
+    <nav class="navbar-right d-flex flex-column">
+     <div class="box-icon">
+      <a href="#homepage" class="btn-icon d-block text-center" value="1">
+        <img src="assets/icon/home.svg">
+      </a>
+      <p id="label1" class="nav-name active">Home</p>
+     </div>
+     <div class="box-icon">
+      <a href="#workspage" class="btn-icon d-block text-center" value="2">
+        <img src="assets/icon/work.svg">
+      </a>
+      <p id="label2" class="nav-name">Works</p>
+     </div>
+     <div class="box-icon">
+      <a href="#aboutpage" class="btn-icon d-block text-center" value="3">
+        <img src="assets/icon/about.svg">
+      </a>
+      <p id="label3" class="nav-name">About</p>
+     </div>
+     <div class="box-icon">
+       <a href="#contactpage" class="btn-icon d-block text-center" value="4">
+        <img src="assets/icon/contact.svg">
+       </a>
+       <p id="label4" class="nav-name">Contact</p>
+     </div>
+    </nav>
+    <!-- Akhir Navbar Control -->
+
+    <!-- Aside -->
+    <aside class="id-card">
+     <div class="top-card">
+      <div class="profile-picture text-center" style="background-image: url('profile.png')"></div>
+      <h5 class="text-center">Bowo Purnomo</h5>
+      <p class="text-center">Full-stack Developer</p>
+      <div class="music-player">
+        <div class="audio-control">
+          <div class="btn-audio" id="btnBackward" title="Backward">
+            <img id="iconBack" src="assets/icon/backward.svg">
+          </div>
+          <div class="btn-audio" id="btnPlay" title="Pause">
+            <img id="iconPlay" src="assets/icon/pause-circle-fill.svg">
+          </div>
+          <div  class="btn-audio" id="btnForward" title="Forward">
+            <img id="iconNext" src="assets/icon/forward.svg">
+          </div>
+          <div class="btn-audio" id="btnVolume" title="mute">
+            <img id="iconVolume" src="assets/icon/volume-up.svg">
+          </div>
+        </div>
+        <audio id="myAudio" autoplay="" >
+            <source src="song/backsound.mp3" type="audio/mpeg">
+            <source src="song/backsound.ogg" type="audio/ogg">
+        </audio>
+        <marquee class="running-text" behavior="scroll" direction="left" scrollamount="5">
+          Nothing's Gonna Change My Love For You | Shania Yan
+        </marquee>        
+      </div>
+     </div>
+     <div class="bottom-card">
+      <table class="table table-borderless">
+       <tbody>
+        <tr>
+         <th>Residence :</th>
+         <td class="text-end">Indonesia</td>
+        </tr>
+        <tr>
+         <th>City :</th>
+         <td class="text-end">Jakarta</td>
+        </tr>
+        <tr>
+         <th>Age</th>
+         <td class="text-end">27</td>
+        </tr>
+       </tbody>
+      </table>
+
+       <div class="row d-flex justify-content-center bar-progress">
+         <div class="col">
+           <div class="progress satu">
+             <span class="progress-left">
+               <span class="progress-bar"></span>
+             </span>
+             <span class="progress-right">
+               <span class="progress-bar"></span>
+             </span>
+             <div class="progress-value">90%</div>
+           </div>
+           <p class="detail text-center">Indonesian</p>
+         </div>
+         <div class="col">
+           <div class="progress dua">
+             <span class="progress-left">
+               <span class="progress-bar"></span>
+             </span>
+             <span class="progress-right">
+               <span class="progress-bar"></span>
+             </span>
+             <div class="progress-value">45%</div>
+           </div>
+           <p class="detail text-center">English</p>
+         </div>
+       </div>
+
+       <div class="bar-progress-dua mt-3">
+         <div class="box-progres">
+           <div class="label">
+             <label for="html">Html</label>
+             <span class="text-end">60%</span>
+           </div>
+           <div class="progress" id="html" style="height: 5px">
+             <div
+               class="progress-bar"
+               role="progressbar"
+               aria-label="Basic example"
+               aria-valuenow="50"
+               aria-valuein="0"
+               aria-valuemax="100"
+               style="width: 60%; background-color: #c1ff72"
+             ></div>
+           </div>
+         </div>
+
+         <div class="box-progres">
+           <div class="label">
+             <label for="css">Css</label>
+             <span class="text-end">65%</span>
+           </div>
+           <div class="progress" id="css" style="height: 5px">
+             <div
+               class="progress-bar"
+               role="progressbar"
+               aria-label="Basic example"
+               aria-valuenow="50"
+               aria-valuein="0"
+               aria-valuemax="100"
+               style="width: 65%; background-color: #c1ff72"
+             ></div>
+           </div>
+         </div>
+
+         <div class="box-progres">
+           <div class="label">
+             <label for="js">JavaScript</label>
+             <span class="text-end">50%</span>
+           </div>
+           <div class="progress" id="js" style="height: 5px">
+             <div
+               class="progress-bar"
+               role="progressbar"
+               aria-label="Basic example"
+               aria-valuenow="50"
+               aria-valuein="0"
+               aria-valuemax="100"
+               style="width: 50%; background-color: #c1ff72"
+             ></div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="social-nav">
+      <a href="https://web.facebook.com/CR7BOWO/" title="facebook" target="_blank" class="bi bi-facebook" >
+        <img src="assets/icon/facebook.svg" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/bowo-purnomo-4ab254202/" title="linkedin" target="_blank" class="bi bi-linkedin">
+        <img src="assets/icon/linkedin.svg" alt="">
+      </a>
+      <a href="https://www.instagram.com/boww20/" title="instagram" target="_blank" class="bi bi-instagram">
+        <img src="assets/icon/instagram.svg" alt="">
+      </a>
+      <a href="https://twitter.com/BowoPurnomo20" title="twitter" target="_blank" class="bi bi-twitter">
+        <img src="assets/icon/twitter.svg" alt="">
+      </a>
+     </div>
+    </aside>
+    <!-- Akhir Aside -->
+
+    <!-- Awal Article -->
+    <article>
+     <section id="home">
+      <div class="row container-fluid flex-column-reverse flex-sm-row jumbotron">
+       <div class="col-lg-9 col-sm-8 position-relative">
+        <h1>The beautifull of logic art</h1>
+        <br>
+        <p>
+         <span>&lt;code&gt;</span> Family of mr lorem and mrs insum
+         <span>&lt;/code&gt;</span>
+        </p>
+        <button type="button" class="btn btn-warning btn-sm ">
+         Explorer Now
+        </button>
+       </div>
+       <div class="col-lg-3 col-sm-4 text-center img-profile" >
+        <img src="img/profile-image.png" class="img-profile" alt="..." />
+       </div>
+      </div>
+      <div class="row  gap-3 d-flex justify-content-center">
+       <div class="col experience">
+        <h2>1</h2>
+        <span>Year Experience</span>
+       </div>
+       <div class="col experience">
+        <h2>12</h2>
+        <span>Year Knowlage</span>
+       </div>
+       <div class="col experience">
+        <h2>6</h2>
+        <span>Know Library</span>
+       </div>
+       <div class="col experience">
+        <h2>3</h2>
+        <span>Year Experience</span>
+       </div>
+      </div>
+     </section>
+
+     <section id="workspage">
+      <h1 class="mt-2">My Works</h1>
+      <div class="row container-fluid pt-3 pb-3">
+       <div class="col-12 col-md-6 col-lg-4">
+        <div class="card" style="width: 100%">
+         <img src="img/work1.png" class="card-img-top" alt="..." />
+         <div class="card-body">
+          <div class="card-title">
+            <h5>Sport Blog</h5>
+          </div>
+          <p class="card-text text-center">
+            Aplikasi sederhana yang dibangun untuk kepentingan pribadi
+            dan informasi seputar aktifitas olahraga
+          </p>
+          <div class="card-icon">
+           <img src="img/tool/html_logo.png" alt="" />
+           <img src="img/tool/bootstrap_logo.png" alt="" />
+           <img src="img/tool/js_logo.png" alt="" />
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <div class="card" style="width: 100%">
+         <img src="img/work1.png" class="card-img-top" alt="..." />
+         <div class="card-body">
+          <div class="card-title">
+            <h5>Sport Blog</h5>
+          </div>
+          <p class="card-text text-center">
+            Aplikasi sederhana yang dibangun untuk kepentingan pribadi
+            dan informasi seputar aktifitas olahraga
+          </p>
+          <div class="card-icon">
+           <img src="img/tool/html_logo.png" alt="" />
+           <img src="img/tool/bootstrap_logo.png" alt="" />
+           <img src="img/tool/js_logo.png" alt="" />
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+        <div class="card" style="width: 100%">
+         <img src="img/work1.png" class="card-img-top" alt="..." />
+         <div class="card-body">
+          <div class="card-title">
+            <h5>Sport Blog</h5>
+          </div>
+          <p class="card-text text-center">
+            Aplikasi sederhana yang dibangun untuk kepentingan pribadi
+            dan informasi seputar aktifitas olahraga
+          </p>
+          <div class="card-icon">
+           <img src="img/tool/html_logo.png" alt="" />
+           <img src="img/tool/bootstrap_logo.png" alt="" />
+           <img src="img/tool/js_logo.png" alt="" />
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+
+     <section id="aboutpage">
+     	<h1 class="mt-2">About Me</h1>
+     	<div class="row container-fluid pt-3 pb-3">
+     		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    		  <div class="carousel-inner">
+      			<div class="carousel-item active" data-bs-interval="5000">
+     			  <img src="images/showImg/appDev.jpg" class="d-block w-100" alt="...">
+      			</div>
+      			<div class="carousel-item" data-bs-interval="2000">
+     			  <img src="images/showImg/blogger.jpg" class="d-block w-100" alt="...">
+      			</div>
+      			<div class="carousel-item" data-bs-interval="6000">
+     			  <img src="images/showImg/dataAna.jpg" class="d-block w-100" alt="...">
+      			</div>
+      			<div class="carousel-item" data-bs-interval="5000">
+     			  <img src="images/showImg/fullDev.jpg" class="d-block w-100" alt="...">
+      			</div>
+      			<div class="carousel-item" data-bs-interval="2000">
+     			  <img src="images/showImg/photographer.jpg" class="d-block w-100" alt="...">
+      			</div>
+    		  </div>
+    		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			  <span class="visually-hidden">Previous</span>
+    		  </button>
+    		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			  <span class="visually-hidden">Next</span>
+    		  </button>
+     		</div>
+     		<p class="mt-3">Since enering collage i realy like programing languages because in my opinion it is a defitine science and very exciting when solving a problem. Build an application togethe and buil good cooperation.</p>
+     		<div class="row">
+     			<div class="col-sm-6">
+     				<table class=""table>
+     					<thead>
+     						<tr>
+     							<th scope="col"><u>Education</u>  </th>
+     						</tr>
+     					</thead>
+     					<tbody>
+     						<tr>
+     							<th scope="row">2016</th>
+     							<td>University AUB Surakarta</td>
+     						</tr>
+     						<tr>
+     							<th scope="row"></th>
+     							<td>Departement of Computer Engineering</br>GPA of 3.8/4.0</td>
+     						</tr>
+     					</tbody>
+     				</table>
+     			</div>
+     			<div class="col-sm-6">
+     				<table class=""table>
+     					<thead>
+     						<tr>
+     							<th scope="col">  <u>Experience</u>  </th>
+     						</tr>
+     					</thead>
+     					<tbody>
+     						<tr>
+     							<th scope="row">2022</th>
+     							<td>Mega Bank</td>
+     						</tr>
+     						<tr>
+     							<th scope="row"></th>
+     							<td>CCPL Remedial - Coolection</td>
+     						</tr>
+     					</tbody>
+     				</table>
+     			</div>
+     		</div>
+     		<div class="row  button-warning">
+     		  <a href="assets/Resumaker.pdf" class="btn btn-warning btn-sm d-block"  download>Resume</a>
+     		</div>
+     	</div>
+     </section>
+
+     <section id="contactpage">
+     	<h1 class="mt-2">Contact Me</h1>
+     	<div class="row container-fluid">
+     		<div class="col-md ps-3 d-flex flex-column justify-content-center">
+     			<h3 class="mb-4">Let's Chat</br>And Work Together</h3>
+          <div class="row">
+       			<div class="box-chatme col-12 col-md-6 d-flex ms-2">
+              <img src="assets/icon/mail.svg" alt="">
+       				<a href="mailto:Bowopurnomo4@gmail.com"  class="ms-2" target="_blank">Mail Me at</br><span>Bowopurnomo4@gmail.com</span></a>
+       			</div>
+       			<div class="box-chatme col-12 col-md-6  d-flex ms-2">
+              <img src="assets/icon/whatsapp.svg"  alt="">
+       				<a href=" https://wa.me/+621281160375" class="ms-2" target="_blank">Whatsapp Me</br><span>+62 812 8116 0375</span></a>	
+       			</div>
+          </div>
+     		</div>
+     		<div class="col-md p-5">
+     			<form action="mailto:bowopurnomo4@gmail.com"  method="post"
+     			enctype="text/plain">
+     				<div class="mb-3">
+     					<label for="exampleInputName" class="form-label">Name</label>
+     					<input type="text" class="form-control" name="nama" id="exampleInputName">
+     				</div>
+     				<div class="mb-3">
+     					<label for="exampleInputEmail1" class="form-label">Email</label>
+     					<input type="email" class="form-control"  name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+     					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+     				</div>
+     				<div class="mb-3">
+     					<label for="exampleInputMessage" class="form-label">Message</label>
+     					<input type="text" class="form-control" name="comment"  id="exampleInputMessage">
+     				</div>
+     				<button type="submit" class="btn btn-warning btn-sm">
+     				  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+              </svg>&nbsp;Send</button>
+              <button type="reset"  class="btn btn-outline-warning btn-sm">Reset</button>
+     			</form>
+     		</div>
+     	</div>
+     </section>
+    </article>
+    <!-- AKhir Article -->
+   <!-- My JavaScript -->
+   <script src="js/script.js"></script>	
+
+   <!-- Bootstrap JS -->
+   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src=" assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+  </body>
+</html>
