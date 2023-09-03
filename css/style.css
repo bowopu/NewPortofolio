@@ -32,7 +32,7 @@ body {
   cursor: pointer;
 }
 
-.id-card {
+aside {
   position: fixed;
   width: 15rem;
   border-radius: 5px;
@@ -43,6 +43,13 @@ body {
   top: 1rem;
   bottom: 1rem;
 }
+
+.id-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
 
 .top-card {
   /*position: absolute;*/
@@ -110,9 +117,22 @@ audio {
   cursor: pointer;
 }
 
-.running-text{
+.music-player{
+  overflow: hidden;
+}
+
+
+#scroll-text {
+  /* animation properties */
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
 }
 
 .bottom-card {
@@ -149,7 +169,7 @@ audio {
   transform: translateX(-50%);
 }
 
-.id-card .social-nav {
+aside .social-nav {
   position: relative;
   background: rgba(0, 0, 50, 0.19);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -280,7 +300,7 @@ audio {
   font-size: 0.6rem;
 }
 
-.id-card .social-nav svg {
+aside .social-nav svg {
   color: white;
 }
 
@@ -337,11 +357,11 @@ audio {
 
 article {
   position: absolute;
-  background: rgba(0, 0, 50, 0.19);
+/*  background: rgba(0, 0, 50, 0.19);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.3px);
   -webkit-backdrop-filter: blur(2.3px);
-  border: 1px solid rgba(104, 30, 216, 0.19);
+  border: 1px solid rgba(104, 30, 216, 0.19);*/
   left: 17.5rem;
   right: 5rem;
   padding: 1rem;
@@ -357,7 +377,7 @@ article .jumbotron {
   box-shadow: 5px -5px 3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-right: 0.5rem;
-  min-height: 17rem;
+  min-height: 15rem;
 }
 
 article .jumbotron::before {
@@ -376,11 +396,11 @@ article .jumbotron::before {
 }
 
 article .jumbotron h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 4rem;
 }
 
-h1 {
+h3 {
   font-family: "Alice", serif;
   font-weight: bold;
   font-size: 3rem;
@@ -520,6 +540,7 @@ article .experience span {
   justify-content: flex-end;
 }
 .btn-warning {
+  background-color: var(--yellow);
   width: 100px;
   margin-right: 0.5rem;
 }
@@ -608,7 +629,7 @@ article .experience span {
   * {
     font-size: 13px;
   }
-  .id-card {
+  aside {
     width: 12rem;
   }
 
@@ -624,7 +645,7 @@ article .experience span {
     width: 3rem;
   }
 
-  #contactpage h3 {
+  #contactpage h4 {
     text-align: center;
   }
 
@@ -639,30 +660,52 @@ article .experience span {
     font-size: 12px;
   }
 
+  article{
+    padding: 0.5rem;
+  }
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .jumbotron p{
+    text-align: center;
+  }
+
   .toggle-profile {
     position: fixed;
     display: block;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(50, 50, 200, 0.5);
     border-radius: 2px;
+    left: 5px;
   }
 
   .toggle-profile .bi-list {
     width: 2rem;
     color: white;
     cursor: pointer;
+
   }
 
-  .id-card {
-    display: none;
+  aside {
     left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
-    width: auto;
+    width: 100%;
     padding: 1rem 4rem;
     height: 100hv;
     background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
   }
 
   .navbar-right {
@@ -686,8 +729,9 @@ article .experience span {
   }
 
   article {
-    left: 1.5rem;
-    right: 1.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    padding: 0.2rem;
   }
 
   .jumbotron {
@@ -698,9 +742,47 @@ article .experience span {
     display: none;
   }
 
-  #contactpage h3 {
-    margin-top: 20px;
+  article .experience h2 {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+  article .experience span{
+    line-height: 1rem;
   }
+
+  .button-warning {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+
+  #workspage .card-icon{
+    margin: auto;
+    width: 50%;
+  }
+
+  #workspage .card-icon img {
+    width: 15px;
+  }
+
+  #contactpage h4 {
+      margin-top: 20px;
+  }
+
+  #contactpage .container-fluid .row{
+    justify-content: center;
+  }
+  .btn-warning{
+    width: 60px;
+  }
+  .jumbotron .btn-warning{
+  width: 75px;
+  }
+
+ 
+
+
 }
 
 @keyframes loading-1 {
@@ -733,6 +815,26 @@ article .experience span {
     transform: rotate(160deg);
   }
 }
+
+
+
+/*my animation on chrome*/
+@-webkit-keyframes my-animation{
+  from {-webkit-transform:translateX(100%);}
+  to {-webkit-transform:translateX(-100%);}
+}
+
+@keyframes my-animation{
+  from {-moz-transform:translateX(100%);
+        -webkit-transform:translateX(100%);
+        transform: translateX(100%);
+  }
+  to {-moz-transform:translateX(-100%);
+      -webkit-transform:translateX(-100%);
+      transform: translateX(-100%);
+  }
+}
+
 
 /*Background Style*/
 @keyframes move {

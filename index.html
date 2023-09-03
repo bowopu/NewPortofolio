@@ -31,7 +31,7 @@
     
     <!-- Toogle Profile -->
     <div class="toggle-profile">
-     <img src="assets/icon/humburger.svg">
+     <img id="toggleProfile" src="assets/icon/humburger.svg">
     </div>
     <!-- Akhir Toogle Profile -->
  
@@ -65,150 +65,150 @@
     <!-- Akhir Navbar Control -->
 
     <!-- Aside -->
-    <aside class="id-card">
-     <div class="top-card">
-      <div class="profile-picture text-center" style="background-image: url('profile.png')"></div>
-      <h5 class="text-center">Bowo Purnomo</h5>
-      <p class="text-center">Full-stack Developer</p>
-      <div class="music-player">
-        <div class="audio-control">
-          <div class="btn-audio" id="btnBackward" title="Backward">
-            <img id="iconBack" src="assets/icon/backward.svg">
+    <aside >
+      <div class="id-card">
+       <div class="top-card">
+        <div class="profile-picture text-center" style="background-image: url('profile.png')"></div>
+        <h5 class="text-center">Bowo Purnomo</h5>
+        <p class="text-center">Full-stack Developer</p>
+        <div class="music-player">
+          <div class="audio-control">
+            <div class="btn-audio" id="btnBackward" title="Backward">
+              <img id="iconBack" src="assets/icon/backward.svg">
+            </div>
+            <div class="btn-audio" id="btnPlay" title="Pause">
+              <img id="iconPlay" src="assets/icon/pause-circle-fill.svg">
+            </div>
+            <div  class="btn-audio" id="btnForward" title="Forward">
+              <img id="iconNext" src="assets/icon/forward.svg">
+            </div>
+            <div class="btn-audio" id="btnVolume" title="mute">
+              <img id="iconVolume" src="assets/icon/volume-up.svg">
+            </div>
           </div>
-          <div class="btn-audio" id="btnPlay" title="Pause">
-            <img id="iconPlay" src="assets/icon/pause-circle-fill.svg">
-          </div>
-          <div  class="btn-audio" id="btnForward" title="Forward">
-            <img id="iconNext" src="assets/icon/forward.svg">
-          </div>
-          <div class="btn-audio" id="btnVolume" title="mute">
-            <img id="iconVolume" src="assets/icon/volume-up.svg">
-          </div>
+          <audio id="myAudio" autoplay="true" >
+              <source src="song/backsound.mp3" type="audio/mpeg">
+              <source src="song/backsound.ogg" type="audio/ogg">
+          </audio>
+          <div id="scroll-text">Nothing's gonna change - Shania Yan</div>
         </div>
-        <audio id="myAudio" autoplay="" >
-            <source src="song/backsound.mp3" type="audio/mpeg">
-            <source src="song/backsound.ogg" type="audio/ogg">
-        </audio>
-        <marquee class="running-text" behavior="scroll" direction="left" scrollamount="5">
-          Nothing's Gonna Change My Love For You | Shania Yan
-        </marquee>        
+       </div>
+
+       <div class="bottom-card">
+        <table class="table table-borderless">
+         <tbody>
+          <tr>
+           <th>Residence :</th>
+           <td class="text-end">Indonesia</td>
+          </tr>
+          <tr>
+           <th>City :</th>
+           <td class="text-end">Jakarta</td>
+          </tr>
+          <tr>
+           <th>Age</th>
+           <td class="text-end">27</td>
+          </tr>
+         </tbody>
+        </table>
+         <div class="row d-flex justify-content-center bar-progress">
+           <div class="col">
+             <div class="progress satu">
+               <span class="progress-left">
+                 <span class="progress-bar"></span>
+               </span>
+               <span class="progress-right">
+                 <span class="progress-bar"></span>
+               </span>
+               <div class="progress-value">90%</div>
+             </div>
+             <p class="detail text-center">Indonesian</p>
+           </div>
+           <div class="col">
+             <div class="progress dua">
+               <span class="progress-left">
+                 <span class="progress-bar"></span>
+               </span>
+               <span class="progress-right">
+                 <span class="progress-bar"></span>
+               </span>
+               <div class="progress-value">45%</div>
+             </div>
+             <p class="detail text-center">English</p>
+           </div>
+         </div>
+         <div class="bar-progress-dua mt-3">
+           <div class="box-progres">
+             <div class="label">
+               <label for="html">Html</label>
+               <span class="text-end">60%</span>
+             </div>
+             <div class="progress" id="html" style="height: 5px">
+               <div
+                 class="progress-bar"
+                 role="progressbar"
+                 aria-label="Basic example"
+                 aria-valuenow="50"
+                 aria-valuein="0"
+                 aria-valuemax="100"
+                 style="width: 60%; background-color: #c1ff72"
+               ></div>
+             </div>
+           </div>
+
+           <div class="box-progres">
+             <div class="label">
+               <label for="css">Css</label>
+               <span class="text-end">65%</span>
+             </div>
+             <div class="progress" id="css" style="height: 5px">
+               <div
+                 class="progress-bar"
+                 role="progressbar"
+                 aria-label="Basic example"
+                 aria-valuenow="50"
+                 aria-valuein="0"
+                 aria-valuemax="100"
+                 style="width: 65%; background-color: #c1ff72"
+               ></div>
+             </div>
+           </div>
+
+           <div class="box-progres">
+             <div class="label">
+               <label for="js">JavaScript</label>
+               <span class="text-end">50%</span>
+             </div>
+             <div class="progress" id="js" style="height: 5px">
+               <div
+                 class="progress-bar"
+                 role="progressbar"
+                 aria-label="Basic example"
+                 aria-valuenow="50"
+                 aria-valuein="0"
+                 aria-valuemax="100"
+                 style="width: 50%; background-color: #c1ff72"
+               ></div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="social-nav">
+        <a href="https://web.facebook.com/CR7BOWO/" title="facebook" target="_blank" class="bi bi-facebook" >
+          <img src="assets/icon/facebook.svg" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/bowo-purnomo-4ab254202/" title="linkedin" target="_blank" class="bi bi-linkedin">
+          <img src="assets/icon/linkedin.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/boww20/" title="instagram" target="_blank" class="bi bi-instagram">
+          <img src="assets/icon/instagram.svg" alt="">
+        </a>
+        <a href="https://twitter.com/BowoPurnomo20" title="twitter" target="_blank" class="bi bi-twitter">
+          <img src="assets/icon/twitter.svg" alt="">
+        </a>
+       </div>        
       </div>
-     </div>
-     <div class="bottom-card">
-      <table class="table table-borderless">
-       <tbody>
-        <tr>
-         <th>Residence :</th>
-         <td class="text-end">Indonesia</td>
-        </tr>
-        <tr>
-         <th>City :</th>
-         <td class="text-end">Jakarta</td>
-        </tr>
-        <tr>
-         <th>Age</th>
-         <td class="text-end">27</td>
-        </tr>
-       </tbody>
-      </table>
-
-       <div class="row d-flex justify-content-center bar-progress">
-         <div class="col">
-           <div class="progress satu">
-             <span class="progress-left">
-               <span class="progress-bar"></span>
-             </span>
-             <span class="progress-right">
-               <span class="progress-bar"></span>
-             </span>
-             <div class="progress-value">90%</div>
-           </div>
-           <p class="detail text-center">Indonesian</p>
-         </div>
-         <div class="col">
-           <div class="progress dua">
-             <span class="progress-left">
-               <span class="progress-bar"></span>
-             </span>
-             <span class="progress-right">
-               <span class="progress-bar"></span>
-             </span>
-             <div class="progress-value">45%</div>
-           </div>
-           <p class="detail text-center">English</p>
-         </div>
-       </div>
-
-       <div class="bar-progress-dua mt-3">
-         <div class="box-progres">
-           <div class="label">
-             <label for="html">Html</label>
-             <span class="text-end">60%</span>
-           </div>
-           <div class="progress" id="html" style="height: 5px">
-             <div
-               class="progress-bar"
-               role="progressbar"
-               aria-label="Basic example"
-               aria-valuenow="50"
-               aria-valuein="0"
-               aria-valuemax="100"
-               style="width: 60%; background-color: #c1ff72"
-             ></div>
-           </div>
-         </div>
-
-         <div class="box-progres">
-           <div class="label">
-             <label for="css">Css</label>
-             <span class="text-end">65%</span>
-           </div>
-           <div class="progress" id="css" style="height: 5px">
-             <div
-               class="progress-bar"
-               role="progressbar"
-               aria-label="Basic example"
-               aria-valuenow="50"
-               aria-valuein="0"
-               aria-valuemax="100"
-               style="width: 65%; background-color: #c1ff72"
-             ></div>
-           </div>
-         </div>
-
-         <div class="box-progres">
-           <div class="label">
-             <label for="js">JavaScript</label>
-             <span class="text-end">50%</span>
-           </div>
-           <div class="progress" id="js" style="height: 5px">
-             <div
-               class="progress-bar"
-               role="progressbar"
-               aria-label="Basic example"
-               aria-valuenow="50"
-               aria-valuein="0"
-               aria-valuemax="100"
-               style="width: 50%; background-color: #c1ff72"
-             ></div>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="social-nav">
-      <a href="https://web.facebook.com/CR7BOWO/" title="facebook" target="_blank" class="bi bi-facebook" >
-        <img src="assets/icon/facebook.svg" alt="">
-      </a>
-      <a href="https://www.linkedin.com/in/bowo-purnomo-4ab254202/" title="linkedin" target="_blank" class="bi bi-linkedin">
-        <img src="assets/icon/linkedin.svg" alt="">
-      </a>
-      <a href="https://www.instagram.com/boww20/" title="instagram" target="_blank" class="bi bi-instagram">
-        <img src="assets/icon/instagram.svg" alt="">
-      </a>
-      <a href="https://twitter.com/BowoPurnomo20" title="twitter" target="_blank" class="bi bi-twitter">
-        <img src="assets/icon/twitter.svg" alt="">
-      </a>
-     </div>
     </aside>
     <!-- Akhir Aside -->
 
@@ -223,9 +223,9 @@
          <span>&lt;code&gt;</span> Family of mr lorem and mrs insum
          <span>&lt;/code&gt;</span>
         </p>
-        <button type="button" class="btn btn-warning btn-sm ">
+<!--         <button type="button" class="btn btn-warning btn-sm ">
          Explorer Now
-        </button>
+        </button> -->
        </div>
        <div class="col-lg-3 col-sm-4 text-center img-profile" >
         <img src="img/profile-image.png" class="img-profile" alt="..." />
@@ -252,7 +252,7 @@
      </section>
 
      <section id="workspage">
-      <h1 class="mt-2">My Works</h1>
+      <h3 class="mt-2">My Works</h3>
       <div class="row container-fluid pt-3 pb-3">
        <div class="col-12 col-md-6 col-lg-4">
         <div class="card" style="width: 100%">
@@ -315,7 +315,7 @@
      </section>
 
      <section id="aboutpage">
-     	<h1 class="mt-2">About Me</h1>
+     	<h3 class="mt-2">About Me</h3>
      	<div class="row container-fluid pt-3 pb-3">
      		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     		  <div class="carousel-inner">
@@ -350,7 +350,7 @@
      				<table class=""table>
      					<thead>
      						<tr>
-     							<th scope="col"><u>Education</u>  </th>
+     							<th scope="col"><u>Education</u> </th>
      						</tr>
      					</thead>
      					<tbody>
@@ -360,7 +360,7 @@
      						</tr>
      						<tr>
      							<th scope="row"></th>
-     							<td>Departement of Computer Engineering</br>GPA of 3.8/4.0</td>
+     							<td>Departement of Computer Enginering</br>GPA of 3.8/4.0</td>
      						</tr>
      					</tbody>
      				</table>
@@ -369,7 +369,7 @@
      				<table class=""table>
      					<thead>
      						<tr>
-     							<th scope="col">  <u>Experience</u>  </th>
+     							<th scope="col"><u>Experience</u></th>
      						</tr>
      					</thead>
      					<tbody>
@@ -392,10 +392,10 @@
      </section>
 
      <section id="contactpage">
-     	<h1 class="mt-2">Contact Me</h1>
+     	<h3 class="mt-2">Contact Me</h3>
      	<div class="row container-fluid">
      		<div class="col-md ps-3 d-flex flex-column justify-content-center">
-     			<h3 class="mb-4">Let's Chat</br>And Work Together</h3>
+     			<h4 class="mb-4">Let's Chat</br>And Work Together</h4>
           <div class="row">
        			<div class="box-chatme col-12 col-md-6 d-flex ms-2">
               <img src="assets/icon/mail.svg" alt="">
@@ -417,17 +417,15 @@
      				<div class="mb-3">
      					<label for="exampleInputEmail1" class="form-label">Email</label>
      					<input type="email" class="form-control"  name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
-     					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
      				</div>
      				<div class="mb-3">
      					<label for="exampleInputMessage" class="form-label">Message</label>
      					<input type="text" class="form-control" name="comment"  id="exampleInputMessage">
      				</div>
      				<button type="submit" class="btn btn-warning btn-sm">
-     				  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
-              </svg>&nbsp;Send</button>
-              <button type="reset"  class="btn btn-outline-warning btn-sm">Reset</button>
+     				  <img src="assets/icon/send.svg">
+              &nbsp;Send</button>
+            <button type="reset"  class="btn btn-outline-warning btn-sm">Reset</button>
      			</form>
      		</div>
      	</div>

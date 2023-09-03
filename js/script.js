@@ -1,8 +1,11 @@
 $(document).ready(function () {
   $(".toggle-profile").click(function () {
-    $(".id-card").slideToggle("slow");
-  });
+    var src = $("#toggleProfile").attr("src");
+    var newsrc = (src=="assets/icon/humburger.svg") ? "assets/icon/x.svg" : "assets/icon/humburger.svg";
+    $("#toggleProfile").attr("src", newsrc);
+    $("aside").slideToggle("slow");
 
+  });
   $(window).scroll(function (event) {
     var sc = $(window).scrollTop() + 20;
     let home_offset = $("#home").offset(),
@@ -32,11 +35,8 @@ $(document).ready(function () {
     } else {
       $(".nav-name").removeClass("active");
       $("#label" + $(this).attr("value")).addClass("active");
-      // $(".nav-name").hide("700");
-      // $("#label" + $(this).attr("value")).show("700");
       value = $(this).attr("value");
     }
-    console.log(value);
   }
   $(".btn-icon").click(toogleIcon);
 
@@ -52,7 +52,6 @@ $(document).ready(function () {
         $(".id-card").css("overflow", "hidden");
       }
     }
-    console.log(windowSize);
   }
   $(window).resize(checkWidth);
 
@@ -61,27 +60,25 @@ $(document).ready(function () {
   // Play Button Audio
   var x = false;
   $("#btnPlay").click(function(){
+    var src = $("#iconPlay").attr("src");
+    var newsrc = (src=="assets/icon/pause-circle-fill.svg") ? "assets/icon/play-circle-fill.svg" : "assets/icon/pause-circle-fill.svg";
+    $("#iconPlay").attr("src", newsrc);
+
     if(x == false){
       $("#myAudio")[0].pause();
       x = true;
-      $("#iconPlay").prop("src","assets/icon/play-circle-fill.svg");
-      console.log("pause");
     } else {
       $("#myAudio")[0].play();
       x = false;
-       $("#iconPlay").prop("src","assets/icon/pause-circle-fill.svg");
-      console.log("play");
-    }
+  }
   });
   $("#btnVolume").click(function(){
     if($("#myAudio").prop("muted")){
        $("#myAudio").prop("muted",false);
        $("#iconVolume").prop("src","assets/icon/volume-up.svg");
-        console.log("unmute");
     } else {
        $("#myAudio").prop("muted",true);
        $("#iconVolume").prop("src","assets/icon/volume-mute.svg");
-        console.log("mute");
     }
    
   });
